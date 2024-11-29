@@ -10,47 +10,53 @@
     <title>Welcome to bonz.ai</title>
 </head>
 <body>
-    <header>
-        <img src="assets/icons:logo/bonz.ai-logo-white-portrait-full.png" alt="bonz.ai logo">
+    <header class="header header--transparent">
+        <img class="header__logo" src="assets/icons:logo/bonz.ai-logo-white-portrait-full.png" alt="bonz.ai logo">
     </header>
 
-    <section> 
-        <h1> Welcome to bonz.ai </h1>
-        <p> Experience Sustainable Luxury in Nature's Embrace </p>
-        <form action="#"> 
-            <input type="date" placeholder="Check in">
-            <input type="date" placeholder="Check out">
-            <input type="number" placeholder="Guests">
+    <section class="hero">
+        <h1 class="hero__title"> Welcome to bonz.ai </h1>
+        <p class="hero__subtitle"> Experience Sustainable Luxury in Nature's Embrace </p>
+        <form class="hero__search-bar" action="booking.html"> 
+            <input class="hero__search-bar__input" type="date" placeholder="Check in" aria-label="check in date" required>
+            <input class="hero__search-bar__input" type="date" placeholder="Check out" aria-label="check out date" required>
+            <input class="hero__search-bar__input" type="number" placeholder="Guests" min="1" max="10" aria-label="number of guests" required>
+            <button class="hero__search-bar__button" type="submit"> Search Rooms </button>
         </form>
     </section>
     
-    <main>
-        <article>
-            <p> About us </p>
-            <h2> AI driven eco living </h2>
-            <p>Discover a unique stay where eco-friendly living meets modern comfort. Relax, rejuvenate, and reconnect with nature—while making a positive impact on the planet</p>
-            <button> Explore </button>
+    <main class="main-content">
+        <article class="about-card">
+            <p class="about-card__subtitle"> About us </p>
+            <h2 class="about-card__title"> AI driven eco living </h2>
+            <p class="about-card__description">Discover a unique stay where eco-friendly living meets modern comfort. Relax, rejuvenate, and reconnect with nature—while making a positive impact on the planet</p>
+            <button class="about-card__button"> Explore </button>
         </article>
-        <section>
-            <h3> Our Rooms & Suits </h3>
-            <p> Discover accommodations designed for your needs. Relax in our cozy Green Haven, enjoy extra space in our Eco Comfort, or indulge in the luxury of our Nature Luxe suite—each blending modern technology with eco-friendly design.</p>
-            <button> View All </button>
-        </section>
-        <section>
-            <a href="about.html"> Experience bonz.ai </a>
+        <article class="rooms-card">
+            <h3 class="rooms-card__title"> Our Rooms & Suits </h3>
+            <p class="rooms-card__description"> Discover accommodations designed for your needs. Relax in our cozy Green Haven, enjoy extra space in our Eco Comfort, or indulge in the luxury of our Nature Luxe suite—each blending modern technology with eco-friendly design.</p>
+            <button class="rooms-card__button"> View All </button>
+        </article>
+        <section class="experience-card">
+            <img class="experience-card__image" src="assets/lobby-wide.png" alt="Picture of a hotel lobby">
+            <a class="experience-card__link" href="about.html"> Experience bonz.ai 
+                <img class="experience-card__link-icon" src="assets/icons:logo/chevron_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="icon of a chevron leading to a new page">
+            </a>
         </section>
     </main>
-    <footer>
-        <img src="assets/icons:logo/bonz.ai-logo-white-portrait-full.png" alt="">
-        <ul> 
-            <li> <a href="#"> Home </a></li>
-            <li> <a href="#"> About </a></li>
-            <li> <a href="#"> Rooms </a></li>
-            <li> <a href="#"> Contact </a></li>
+    <footer class="footer">
+        <img class="footer__logo" src="assets/icons:logo/bonz.ai-logo-white-portrait-full.png" alt="">
+        <ul class="footer__link-list"> 
+            <li class="footer__link-item"> <a href="#"> Home </a></li>
+            <li class="footer__link-item"> <a href="#"> About </a></li>
+            <li class="footer__link-item"> <a href="#"> Rooms </a></li>
+            <li class="footer__link-item"> <a href="#"> Contact </a></li>
         </ul>
-        <img src="assets/icons:logo/facebook.svg" alt="Facebook">
-        <img src="assets/icons:logo/instagram.svg" alt="Instagram">
-        <p>© bonz.ai 2024. All rights reserved</p>
+        <section class="footer__socials">
+            <img class="footer__socials-icon" src="assets/icons:logo/facebook.svg" alt="Facebook">
+            <img class="footer__socials-icon" src="assets/icons:logo/instagram.svg" alt="Instagram">
+        </section>
+        <p class="footer__copyright">© bonz.ai 2024. All rights reserved</p>
     </footer>
 
     
