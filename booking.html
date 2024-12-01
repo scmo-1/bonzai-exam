@@ -7,40 +7,36 @@
     <title>Choose your stay</title>
 </head>
 <body>
-    <header>
-        <img src="assets/icons:logo/bonz.ai-logo-white-portrait-full.png" alt="bonz.ai logo">
+    <header class="header header--filled">
+        <img class="header__logo" src="assets/icons:logo/bonz.ai-logo-white-portrait-full.png" alt="bonz.ai logo">
     </header>
-    <section> 
-        bild
-        <form action="#"> 
-            <input type="date" placeholder="Check in" aria-label="check in date" required>
-            <input type="date" placeholder="Check out" aria-label="check out date" required>
-            <input type="number" placeholder="Guests" min="1" max="10" aria-label="number of guests" required>
-            <button type="submit"> Search Rooms </button>
+    <section class="hero hero--rooms-page"> 
+        <form class="search-bar" action="#"> 
+            <input class="search-bar__input" type="date" placeholder="Check in" aria-label="check in date" required>
+            <input class="search-bar__input" type="date" placeholder="Check out" aria-label="check out date" required>
+            <input class="search-bar__input" type="number" placeholder="Guests" min="1" max="10" aria-label="number of guests" required>
+            <button class="search-bar__button" type="submit"> Search Rooms </button>
         </form>
     </section>
-    <main>
-        <h1> Choose Your Stay</h1>
-        <article>
-            <img src="" alt="Picture of single bed hotel room Green Haven">
-            <h2> Green Haven </h2>
-            <p> A cozy retreat perfect for solo travelers or minimalists, designed with comfort and sustainability in mind.</p>
-            <p> €100 / night </p>
-            <button> Book Room </button>
-        </article>
-
-
+    <main class="main-content main-content__booking">
+        <h1 class="main-content__title"> Choose Your Stay</h1>
+        <section class="card card-rooms">
+            <img class="card__image card__image--rooms" src="" alt="Picture of single bed hotel room Green Haven">
+            <article class=" card__content">
+                <h2 class="card__title"> Green Haven </h2>
+                <p class="card__description"> A cozy retreat perfect for solo travelers or minimalists, designed with comfort and sustainability in mind.</p>
+                <ul class="card__list">
+                    <li class="card__list-item"> <img src="assets/icons:logo/restaurant_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <p> All-Day Dining </p> </li>
+                    <li class="card__list-item"> <img src="assets/icons:logo/exercise_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <p> Fitness Center </p> </li>
+                    <li class="card__list-item"> <img src="assets/icons:logo/info_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <p> 24/7 Smart Help Desk </p> </li>
+                    <li class="card__list-item"> <img src="assets/icons:logo/wifi_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg alt="> <p> High-Speed Internet </p> </li>
+                </ul>
+                <p class="card__pricing"> €100 / night </p>
+                <button class="card__button card__button--rooms"> Book Room </button>
+            </article>
+        </section>
+       
     </main>
-
-
-
-
-
-
-
-
-
-
     <footer class="footer">
         <img class="footer__logo" src="assets/icons:logo/bonz.ai-logo-white-portrait-full.png" alt="">
         <ul class="link-list"> 
