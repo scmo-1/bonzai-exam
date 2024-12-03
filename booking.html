@@ -10,8 +10,8 @@
     <header class="header header--filled">
         <img class="header__logo" src="assets/icons:logo/bonz.ai-logo-white-portrait-full.png" alt="bonz.ai logo">
     </header>
-    <section class="hero hero--rooms-page"> 
-
+    <section class="hero hero--rooms-page">
+         <h1 class="hero__title"> Choose Your Stay </h1>
     </section>
     <main class="main-content main-content--booking">
         <form class="search-bar" action="#"> 
@@ -20,23 +20,111 @@
             <input class="search-bar__input" type="number" placeholder="Guests" min="1" max="10" aria-label="number of guests" required>
             <button class="search-bar__button" type="submit"> Search Rooms </button>
         </form>
-        <h1 class="main-content__title"> Choose Your Stay</h1>
-        <section class="card card--rooms">
-            <img class="card__image card__image--rooms" src="" alt="Picture of single bed hotel room Green Haven">
-            <article class=" card__content">
-                <h2 class="card__title"> Green Haven </h2>
-                <p class="card__description"> A cozy retreat perfect for solo travelers or minimalists, designed with comfort and sustainability in mind.</p>
-                <ul class="card__list">
-                    <li class="card__list-item"> <img src="assets/icons:logo/restaurant_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <p> All-Day Dining </p> </li>
-                    <li class="card__list-item"> <img src="assets/icons:logo/exercise_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <p> Fitness Center </p> </li>
-                    <li class="card__list-item"> <img src="assets/icons:logo/info_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <p> 24/7 Smart Help Desk </p> </li>
-                    <li class="card__list-item"> <img src="assets/icons:logo/wifi_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg alt="> <p> High-Speed Internet </p> </li>
+        <section class="room-card">
+            <img class="room-card__image" src="" alt="Picture of single bed hotel room Green Haven">
+            <article class=" room-card__content">
+                <h2 class="room-card__title"> Green Haven </h2>
+                <p class="room-card__description"> A cozy retreat perfect for solo travelers or minimalists, designed with comfort and sustainability in mind.</p>
+                <ul class="room-card__features-list">
+                    <li class="room-card__list-item">
+                        <figure class="room-card__figure">
+                            <img class="room-card__icon" src="assets/icons:logo/restaurant_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            <figcaption class="room-card__caption"> All-Day Dining </figcaption>
+                        </figure>    
+                    </li>
+                    <li class="room-card__list-item">
+                        <figure class="room-card__figure">
+                            <img class="room-card__icon" src="assets/icons:logo/exercise_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            <figcaption class="room-card__caption"> Fitness Center </figcaption>
+                        </figure>    
+                    </li>
+                    <li class="room-card__list-item">
+                        <figure class="room-card__figure">
+                            <img class="room-card__icon" src="assets/icons:logo/info_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            <figcaption class="room-card__caption"> 24/7 Smart Help Desk </figcaption>
+                        </figure>    
+                    </li>
+                    <li class="room-card__list-item">
+                        <figure class="room-card__figure">
+                            <img class="room-card__icon" src="assets/icons:logo/wifi_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            <figcaption class="room-card__caption"> High-Speed Internet </figcaption>
+                        </figure>    
+                    </li>
                 </ul>
-                <p class="card__pricing"> €100 / night </p>
-                <button class="card__button card__button--rooms"> Book Room </button>
+                <p class="room-card__pricing"> €100 / night </p>
+                <button class="room-card__button"> Book Room </button>
             </article>
         </section>
-       
+        <section class="room-card">
+            <img class="room-card__image" src="" alt="Picture of double bed hotel room Eco Comfort">
+            <article class=" room-card__content">
+                <h2 class="room-card__title"> Eco Comfort </h2>
+                <p class="room-card__description"> Spacious and inviting, ideal for couples or small families, with enhanced amenities for a sustainable stay.</p>
+                <ul class="room-card__features-list">
+                    <li class="room-card__list-item">
+                        <figure class="room-card__figure">
+                            <img class="room-card__icon" src="assets/icons:logo/restaurant_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            <figcaption class="room-card__caption"> All-Day Dining </figcaption>
+                        </figure>    
+                    </li>
+                    <li class="room-card__list-item">
+                        <figure class="room-card__figure">
+                            <img class="room-card__icon" src="assets/icons:logo/exercise_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            <figcaption class="room-card__caption"> Fitness Center </figcaption>
+                        </figure>    
+                    </li>
+                    <li class="room-card__list-item">
+                        <figure class="room-card__figure">
+                            <img class="room-card__icon" src="assets/icons:logo/info_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            <figcaption class="room-card__caption"> 24/7 Smart Help Desk </figcaption>
+                        </figure>    
+                    </li>
+                    <li class="room-card__list-item">
+                        <figure class="room-card__figure">
+                            <img class="room-card__icon" src="assets/icons:logo/wifi_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            <figcaption class="room-card__caption"> High-Speed Internet </figcaption>
+                        </figure>    
+                    </li>
+                </ul>
+                <p class="room-card__pricing"> €200 / night </p>
+                <button class="room-card__button"> Book Room </button>
+            </article>
+        </section>
+        <section class="room-card">
+            <img class="room-card__image" src="" alt="Picture of hotel suite Nature Luxe">
+            <article class=" room-card__content">
+                <h2 class="room-card__title"> Nature Luxe </h2>
+                <p class="room-card__description"> A luxurious experience that combines elegance with eco-friendly living, offering the ultimate relaxation in harmony with nature.</p>
+                <ul class="room-card__features-list">
+                    <li class="room-card__list-item">
+                        <figure class="room-card__figure">
+                            <img class="room-card__icon" src="assets/icons:logo/restaurant_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            <figcaption class="room-card__caption"> All-Day Dining </figcaption>
+                        </figure>    
+                    </li>
+                    <li class="room-card__list-item">
+                        <figure class="room-card__figure">
+                            <img class="room-card__icon" src="assets/icons:logo/exercise_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            <figcaption class="room-card__caption"> Fitness Center </figcaption>
+                        </figure>    
+                    </li>
+                    <li class="room-card__list-item">
+                        <figure class="room-card__figure">
+                            <img class="room-card__icon" src="assets/icons:logo/info_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            <figcaption class="room-card__caption"> 24/7 Smart Help Desk </figcaption>
+                        </figure>    
+                    </li>
+                    <li class="room-card__list-item">
+                        <figure class="room-card__figure">
+                            <img class="room-card__icon" src="assets/icons:logo/wifi_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            <figcaption class="room-card__caption"> High-Speed Internet </figcaption>
+                        </figure>    
+                    </li>
+                </ul>
+                <p class="room-card__pricing"> €300 / night </p>
+                <button class="room-card__button"> Book Room </button>
+            </article>
+        </section> 
     </main>
     <footer class="footer">
         <img class="footer__logo" src="assets/icons:logo/bonz.ai-logo-white-portrait-full.png" alt="">
