@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <title>Experience bonz.ai</title>
 </head>
 <body>
-    <header class="header header--filled">
-        <img class="header__logo" src="assets/icons:logo/bonz.ai-logo-white-portrait-full.png" alt="bonz.ai logo">
+    <header class="header header--transparent">
+        <img class="header__logo" src="assets/icons-logo/bonz.ai-logo-white-portrait-full.png" alt="bonz.ai logo">
     </header>
     <section class="hero hero--about-page">
         <article class="text-section text-section--about-us">
@@ -22,7 +26,7 @@
             <h2 class="features__title"> Designed for Your Comfort </h2>
             <article class="features__content">
                 <figure class="features__figure">
-                    <img class="features__icon" src="assets/icons:logo/restaurant_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="All-day dining icon">
+                    <i class="material-symbols-outlined features__icon">fitness_center</i>
                     <figcaption class="features__caption"> 
                         <h3 class="features__subtitle"> All-Day Dining </h3>
                         <p class="features__description"> Enjoy breakfast, lunch, and dinner made from fresh, local ingredients.</p>
@@ -31,7 +35,7 @@
             </article>
             <article class="features__content">
                 <figure class="features__figure">
-                    <img class="features__icon" src="assets/icons:logo/info_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Fitness center icon">
+                    <i class="material-symbols-outlined features__icon">fitness_center</i>
                     <figcaption class="features__caption"> 
                         <h3 class="features__subtitle"> Fitness Center </h3>
                         <p class="features__description"> Stay active with our state-of-the-art fitness facilities.</p>
@@ -40,7 +44,7 @@
             </article>
             <article class="features__content">
                 <figure class="features__figure">
-                    <img class="features__icon" src="assets/icons:logo/info_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="24/7 smart help desk icon">
+                    <i class="material-symbols-outlined features__icon">fitness_center</i>
                     <figcaption class="features__caption"> 
                         <h3 class="features__subtitle"> 24/7 Smart Help Desk </h3>
                         <p class="features__description"> Get round-the-clock support with our AI-powered help desk.</p>
@@ -49,7 +53,7 @@
             </article>
             <article class="features__content">
                 <figure class="features__figure">
-                    <img class="features__icon" src="assets/icons:logo/wifi_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="High-speed internet icon">
+                    <i class="material-symbols-outlined features__icon">fitness_center</i>
                     <figcaption class="features__caption"> 
                         <h3 class="features__subtitle"> High-Speed Internet </h3>
                         <p class="features__description"> Enjoy fast, reliable Wi-Fi throughout the hotel.</p>
@@ -57,27 +61,33 @@
                 </figure>
             </article>
         </section>
-        <section class="text-section text-section--restaurant">    
-            <p class="text-section__heading"> Our Resturant </p>
-            <h2 class="text-section__title"> Harvest </h2>
-            <p class="text-section__description"> Welcome to Harvest, where fresh, locally sourced dishes meet AI-optimized sustainability. Enjoy a dining experience that's as delicious as it is eco-conscious.</p>
-            <img class="text-section__image" src="assets/resturant-light.png" alt="">
+
+
+        <section class="info-card info-card--restaurant">
+            <article class="text-section">
+                <p class="text-section__heading"> Our Resturant </p>
+                <h2 class="text-section__title"> Harvest </h2>
+                <p class="text-section__description"> Welcome to Harvest, where fresh, locally sourced dishes meet AI-optimized sustainability. Enjoy a dining experience that's as delicious as it is eco-conscious.</p>
+            </article>
+            <section class="info-card__media">
+                <img class="info-card__image" src="" alt="">
+            </section>
         </section>
     </main>
 
     <footer class="footer">
-        <img class="footer__logo" src="assets/icons:logo/bonz.ai-logo-white-portrait-full.png" alt="">
+        <img class="footer__logo" src="assets/icons-logo/bonz.ai-logo-white-portrait-full.png" alt="">
         <ul class="link-list"> 
-            <li class="link__item"> <a href="#"> Home </a></li>
-            <li class="link__item"> <a href="#"> About </a></li>
-            <li class="link__item"> <a href="#"> Rooms </a></li>
-            <li class="link__item"> <a href="#"> Contact </a></li>
+            <li class="link-list__item"> <a class="link-list__link" href="#"> Home </a></li>
+            <li class="link-list__item"> <a class="link-list__link" href="#"> About </a></li>
+            <li class="link-list__item"> <a class="link-list__link" href="#"> Rooms </a></li>
+            <li class="link-list__item"> <a class="link-list__link" href="#"> Contact </a></li>
         </ul>
         <section class="socials">
-            <img class="socials__icon" src="assets/icons:logo/facebook.svg" alt="Facebook">
-            <img class="socials__icon" src="assets/icons:logo/instagram.svg" alt="Instagram">
+            <a href="#"><img class="socials__icon" src="assets/icons-logo/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img class="socials__icon" src="assets/icons-logo/instagram.svg" alt="Instagram"></a>
         </section>
         <p class="footer__copyright">© bonz.ai 2024. All rights reserved</p>
-    </footer>
+    </footer>   
 </body>
 </html>
