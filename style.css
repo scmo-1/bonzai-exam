@@ -8,7 +8,7 @@ body {
     height: 100%;
 }
 
-
+/* ----------------header--------------------- */
 .header--transparent{
     width: 100%;
     height: 30%;
@@ -21,7 +21,7 @@ body {
     height: 40%;
 }
 
-
+/* ----------------hero--------------------- */
 .hero {
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,7 +33,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .hero--landing {
     background-image: url('assets/images-web/landing-hero-large.webp');
 }
@@ -61,8 +60,6 @@ body {
     .hero--about-page {
         background-image: url(assets/images-web/about-hero-medium.webp);
     }
-
-
 }
 @media (max-width:640px) {
     .hero__title {
@@ -91,26 +88,14 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
+/* ----------------layout--------------------- */
 .main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-
-
-
-
-
+/* ----------------rum sök--------------------- */
 .search-bar {
     background-color: #3C3C3C;
     display: flex;
@@ -155,16 +140,10 @@ body {
     .search-bar__button {
         width: 100%;
         max-width: none;
-    }
-    
+    }   
 }
 
-
-
-
-
-
-
+/* ----------------liten text--------------------- */
 .text-section {
     display: flex;
     flex-direction: column;
@@ -217,11 +196,7 @@ body {
     }
 }
 
-
-
-
-
-
+/* ----------------kort 1--------------------- */
 .info-card {
     display: flex;
     flex-direction: row;
@@ -235,7 +210,6 @@ body {
     background-color: #254441;
     color: white;
 }
-
 .info-card__content {
     width: 50%;
     height: 100%;
@@ -270,7 +244,7 @@ body {
     height: 100%;
 }
 .info-card__title {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 700;
 }
 .info-card__description {
@@ -278,7 +252,7 @@ body {
     width: 80%;
 }
 .info-card__media--restaurant {
-    background-image: url(assets/images-web/restaurant-large.webp);
+    background-image: url(assets/images-web/restaurant-large-2.webp);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -320,18 +294,7 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* ----------------kort 2--------------------- */
 .room-card {
     display: flex;
     flex-direction: row;
@@ -352,7 +315,6 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
 }
-
 .room-card__button {
     border-style: none;
     background-color: #254441;
@@ -391,8 +353,7 @@ body {
     grid-row: 3 / 4;
     list-style: none;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
 .room-card__figure {
     display: flex;
@@ -445,16 +406,7 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
+/* ----------------ikoner--------------------- */
 .features {
     background-color: #254441;
     color: white;
@@ -510,42 +462,7 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ----------------footer--------------------- */
 footer {
     width: 100%;
     background-color: #3C3C3C;
@@ -578,18 +495,13 @@ footer {
 .socials {
     margin: 1em;
     display: flex;
-    flex-direction: row;
-    gap: 5em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 3em;
 }
 .socials__icon {
     color: white;
     font-size: 3rem;
+    margin: .3em;
 }
-
-
-
-
-
-
-

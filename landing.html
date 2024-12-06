@@ -23,8 +23,8 @@
     
     <main class="main-content main-content--landing">
         <form class="search-bar" action="#"> 
-            <input class="search-bar__input" type="date" placeholder="Check in" aria-label="check in date" required>
-            <input class="search-bar__input" type="date" placeholder="Check out" aria-label="check out date" required>
+            <input class="search-bar__input" type="date"  aria-label="check in date" required>
+            <input class="search-bar__input" type="date" aria-label="check out date" required>
             <input class="search-bar__input" type="number" placeholder="Guests" min="1" max="10" aria-label="number of guests" required>
             <button class="search-bar__button" type="submit"> Search Rooms </button>
         </form>
@@ -37,16 +37,16 @@
         </article>
 
 
-        <section class="info-card info-card--landing">
+        <div class="info-card info-card--landing">
             <article class="info-card__content info-card__content--landing">
                 <h3 class="info-card__title"> Our Rooms & Suits </h3>
                 <p class="info-card__description"> Experience tailored accommodations that blend modern technology with eco-friendly design. Choose from our cozy Green Haven, the spacious Eco Comfort, or indulge in the luxury of our Nature Luxe suite. </p>
                 <button class="info-card__button"> View All </button>
             </article>
-            <section class="info-card__media info-card__media--landing">
+            <div class="info-card__media info-card__media--landing">
                 <button class="info-card__button info-card__button--experience"> Experience bonz.ai </button>
-            </section>    
-        </section>
+            </div>    
+        </div>
 
 
 
@@ -61,8 +61,11 @@
             <li class="link-list__item"> <a class="link-list__link" href="#"> Contact </a></li>
         </ul>
         <section class="socials">
-            <a href="#" class="socials__link"><i class="fa-brands fa-square-facebook socials__icon" aria-label="Link to facebook page"> </i></a>
-            <a href="#" class="socials__link"><i class="fa-brands fa-instagram socials__icon" aria-label="Link to instagram page"> </i></a>
+            <h4 class="socials__title"> Follow us </h4>
+            <div class="socials__links">
+                <a href="#" class="socials__link-item"><i class="fa-brands fa-square-facebook socials__icon" aria-label="Link to facebook page"> </i></a>
+                <a href="#" class="socials__link-item"><i class="fa-brands fa-instagram socials__icon" aria-label="Link to instagram page"> </i></a>
+            </div>    
         </section>
         <p class="footer__copyright">© bonz.ai 2024. All rights reserved</p>
     </footer>   

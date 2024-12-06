@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <script src="https://kit.fontawesome.com/6f0c1e8912.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Choose your stay</title>
@@ -20,12 +20,12 @@
     </section>
     <main class="main-content main-content--booking">
         <form class="search-bar" action="#"> 
-            <input class="search-bar__input" type="date" placeholder="Check in" aria-label="check in date" required>
-            <input class="search-bar__input" type="date" placeholder="Check out" aria-label="check out date" required>
+            <input class="search-bar__input" type="date" aria-label="check in date" required>
+            <input class="search-bar__input" type="date" aria-label="check out date" required>
             <input class="search-bar__input" type="number" placeholder="Guests" min="1" max="10" aria-label="number of guests" required>
             <button class="search-bar__button" type="submit"> Search Rooms </button>
         </form>
-        <section class="room-card">
+        <div class="room-card">
             <img class="room-card__image" src="assets/images-web/Green-Haven-Rooom.webp" alt="Picture of single bed hotel room Green Haven">
             <article class="room-card__content">
                 <h2 class="room-card__title"> Green Haven </h2>
@@ -59,8 +59,8 @@
                 <p class="room-card__pricing"> €100 / night </p>
                 <button class="room-card__button"> Book Room </button>
             </article>
-        </section>
-        <section class="room-card">
+        </div>
+        <div class="room-card">
             <img class="room-card__image" src="assets/images-web/Eco-Comfort-Room.webp" alt="Picture of double bed hotel room Eco Comfort">
             <article class="room-card__content">
                 <h2 class="room-card__title"> Eco Comfort </h2>
@@ -94,8 +94,8 @@
                 <p class="room-card__pricing"> €200 / night </p>
                 <button class="room-card__button"> Book Room </button>
             </article>
-        </section>
-        <section class="room-card">
+        </div>
+        <div class="room-card">
             <img class="room-card__image" src="assets/images-web/Nature-Luxe-Room.webp" alt="Picture of hotel suite Nature Luxe">
             <article class="room-card__content">
                 <h2 class="room-card__title"> Nature Luxe </h2>
@@ -129,7 +129,7 @@
                 <p class="room-card__pricing"> €300 / night </p>
                 <button class="room-card__button"> Book Room </button>
             </article>
-        </section> 
+        </div> 
     </main>
     <footer class="footer">
         <img class="footer__logo" src="assets/icons-logo/bonz.ai-logo-white-portrait-full.png" alt="">
@@ -140,10 +140,13 @@
             <li class="link-list__item"> <a class="link-list__link" href="#"> Contact </a></li>
         </ul>
         <section class="socials">
-            <a href="#" class="socials__link"><i class="fa-brands fa-square-facebook socials__icon" aria-label="Link to facebook page"> </i></a>
-            <a href="#" class="socials__link"><i class="fa-brands fa-instagram socials__icon" aria-label="Link to instagram page"> </i></a>
+            <h4 class="socials__title"> Follow us </h4>
+            <div class="socials__links">
+                <a href="#" class="socials__link-item"><i class="fa-brands fa-square-facebook socials__icon" aria-label="Link to facebook page"> </i></a>
+                <a href="#" class="socials__link-item"><i class="fa-brands fa-instagram socials__icon" aria-label="Link to instagram page"> </i></a>
+            </div>    
         </section>
         <p class="footer__copyright">© bonz.ai 2024. All rights reserved</p>
-    </footer>   
+    </footer> 
 </body>
 </html>
